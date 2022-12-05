@@ -112,7 +112,7 @@ checked."
   (interactive)
   (when languagetool-server-mode
     (setq languagetool-server-correction-p t))
-y  (condition-case err
+  (condition-case err
       (unless (eql 'quit
                (dolist (ov (sort (overlays-in (point)
                                               (point-max))
